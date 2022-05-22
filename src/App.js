@@ -108,6 +108,12 @@ function App() {
         </div>
     );
 }
+var load = document.getElementById("loader");
+
+window.addEventListener("load", function() {
+
+    load.style.display = "none";
+})
 
 function ListItem(props) {
     return (
