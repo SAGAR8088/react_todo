@@ -2,6 +2,14 @@ import React, {useState} from "react";
 import complete from './complete.png';
 
 import './index.css';
+
+var load = document.getElementById("loader");
+
+window.addEventListener("load", function() {
+
+    load.style.display = "none";
+})
+
 function App() {
     const [taskInput, updateTaskInput] = useState("");
     
